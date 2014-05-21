@@ -60,7 +60,6 @@ img = cam.grab_image()
 from pyElphel import Elphel
 
 cam = Elphel()
-cam.init_live()
 
 img = cam.grab_image_slow()
 ```   
