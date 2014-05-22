@@ -10,10 +10,26 @@ Control Elphel camera [353](http://www3.elphel.com/model_353_cameras>) from pyth
 
 ### Installation
 
+#### From python setup tools 
+
+Download the ZIP archive https://github.com/hchauvet/pyElphel/archive/master.zip
+
+Unzip and in the directory *pyElphel-master* run the following command as a sudo user
+
 ```bash
 python setup.py install
 ```
-    
+
+#### From python pip repository
+
+Just enter the following command as root user
+```bash
+sudo python pip install pyElphel
+```
+
+link to the pypi repository
+https://pypi.python.org/pypi?:action=display&name=pyElphel
+
 ### Examples
 
 
@@ -39,10 +55,9 @@ cam.set_params()
 ```python
 from pyElphel import Elphel
 
-cam = Elphel()
-cam.init_live()
-
-cam.display()
+with Elphel() as cam:
+    cam.display()
+    
 ```    
     
 #### Get single image

@@ -23,8 +23,8 @@ setup(name = "pyElphel",
     #It says, package *needs* these files.
     #package_data = {'pyElphel' : files },
     #'runner' is in the root.
-    #scripts = ["pyElphel"],
-    long_description = open('README.md', 'r').read(),
+    #scripts = ["pyElphel.py"],
+    long_description = open('README', 'r').read(),
     #
     #This next part it for the Cheese Shop, look a little down the page.
     #classifiers = []

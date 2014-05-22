@@ -72,7 +72,7 @@ class Elphel:
                 params = all_param_url.split('&')[1:]
                 
                 #Get values for these params the all_parmas_url gives a xml file
-                xmldata = urllib2.urlopen( all_param_url, timeout=1 ) 
+                xmldata = urllib2.urlopen( all_param_url, timeout=2 ) 
                 tree = ElementTree.parse( xmldata )
                 
                 
@@ -181,6 +181,15 @@ class Elphel:
                 frame = 0
                 fps = 0
                 ta = time.time()
+                
+                #Check if we need to init rtsp connection
+                try:
+                        self.live
+                except:
+                        print('Start RTSP connection in self.live')
+                        self.init_live()
+                  
+                #Loop to display images
                 while(True):
                         
                         if frame == 0:
@@ -235,6 +244,6 @@ if __name__ == '__main__':
                 cam.params['EXPOS'] = 10000
                 cam.set_params()
 
-                cam.init_live()
+                #cam.init_live()
 
                 cam.display()
