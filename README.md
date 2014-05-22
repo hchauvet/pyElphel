@@ -24,7 +24,7 @@ python setup.py install
 
 Just enter the following command as root user
 ```bash
-sudo python pip install pyElphel
+sudo pip install pyElphel
 ```
 
 link to the pypi repository
