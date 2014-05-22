@@ -66,10 +66,11 @@ with Elphel() as cam:
 ```python
 from pyElphel import Elphel
 
-cam = Elphel()
-cam.init_live()
+with Elphel() as cam:
+    cam.init_live()
 
-img = cam.grab_image()
+    img = cam.grab_image()
+
 ```
 
 #### Get single image at full resolution
