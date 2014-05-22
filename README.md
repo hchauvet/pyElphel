@@ -1,7 +1,7 @@
 pyElphel
 ========
 
-Control Elphel camera [353](http://www3.elphel.com/model_353_cameras>) from python using RTSP protocol and from imgsrv access for full resoltion images.
+Control Elphel camera [353](http://www3.elphel.com/model_353_cameras>) from python using RTSP protocol and from imgsrv access for full resolution images.
 
 ### Requirement
 
@@ -34,6 +34,8 @@ https://pypi.python.org/pypi?:action=display&name=pyElphel
 
 
 Video at full resolution (2592x1936) is impossible using RTSP. For this resolution use *grab_image_slow()*, which relies on imgsrv access through http.
+
+You can also check examples files in test folder for more detailed examples [*./pyElphel/test*](https://github.com/hchauvet/pyElphel/tree/master/pyElphel/test)
 
 #### Set parameters
 
@@ -79,3 +81,4 @@ cam = Elphel()
 img = cam.grab_image_slow()
 ```   
     
+
