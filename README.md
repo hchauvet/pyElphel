@@ -14,7 +14,7 @@ Control Elphel camera [353](http://www3.elphel.com/model_353_cameras>) from pyth
 
 Download the ZIP archive https://github.com/hchauvet/pyElphel/archive/master.zip
 
-Unzip and in the directory *pyElphel-master* run the following command as a sudo user
+Unzip and in the directory *pyElphel-master* run the following command as a root user
 
 ```bash
 python setup.py install
